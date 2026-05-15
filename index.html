@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>苏州德旭玛精密机械有限公司 | Company Introduction</title>
+  <meta name="description" content="苏州德旭玛精密机械有限公司，提供 CNC 数控加工、产品组装、出货检测与精密机械加工服务。">
+  <style>
+    :root {
+      --ink: #11212b;
+      --muted: #60717d;
+      --line: #dce6ea;
+      --paper: #f7fafb;
+      --white: #ffffff;
+      --blue: #073f66;
+      --blue-2: #0f5a7d;
+      --teal: #2aa198;
+      --green: #3f9a6b;
+      --gold: #c99732;
+      --shadow: 0 18px 50px rgba(16, 39, 54, .12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 10;
+      background: rgba(255, 255, 255, .92);
+      border-bottom: 1px solid rgba(220, 230, 234, .9);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 40px));
+      height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      min-width: 220px;
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 17px;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 1px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      color: #38515f;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      flex: 0 0 auto;
+      padding: 8px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background: #eaf2f4;
+      color: var(--blue);
+    }
+
+    .hero {
+      min-height: 86svh;
+      padding: 112px 0 64px;
+      color: var(--white);
+      display: grid;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(4, 38, 62, .93) 0%, rgba(4, 45, 68, .82) 42%, rgba(4, 48, 66, .35) 100%),
+        url("assets/images/production-01.jpg") center / cover no-repeat;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+      gap: 44px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #b8d9e0;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--teal);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin-bottom: 20px;
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: 1.06;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin-bottom: 34px;
+      color: #d7e9ee;
+      font-size: clamp(17px, 1.7vw, 22px);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      min-height: 46px;
+      padding: 12px 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid rgba(255, 255, 255, .32);
+      border-radius: 6px;
+      color: var(--white);
+      font-weight: 700;
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .button.primary {
+      border-color: var(--teal);
+      background: var(--teal);
+    }
+
+    .hero-panel {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 8px;
+      background: rgba(6, 41, 61, .72);
+      box-shadow: 0 26px 70px rgba(0, 0, 0, .26);
+    }
+
+    .hero-panel h2 {
+      margin-bottom: 18px;
+      color: #e6f6f7;
+      font-size: 22px;
+      overflow-wrap: anywhere;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .metric {
+      min-height: 112px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--white);
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    .metric span {
+      color: #c5dbe0;
+      font-size: 13px;
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .8fr) minmax(280px, .55fr);
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .section-kicker {
+      margin-bottom: 8px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      color: var(--blue);
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .info-item {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 8px 26px rgba(17, 33, 43, .05);
+    }
+
+    .info-item b {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .info-item span {
+      color: var(--muted);
+    }
+
+    .timeline {
+      position: relative;
+      padding: 26px 0 8px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #c7dadd;
+    }
+
+    .milestone {
+      position: relative;
+      margin-left: 52px;
+      padding: 0 0 32px;
+    }
+
+    .milestone::before {
+      content: "";
+      position: absolute;
+      left: -41px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 4px solid var(--paper);
+      background: var(--teal);
+      box-shadow: 0 0 0 1px #b7ced4;
+    }
+
+    .milestone time {
+      display: inline-block;
+      margin-bottom: 4px;
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .milestone h3 {
+      margin-bottom: 5px;
+      color: var(--blue);
+      font-size: 19px;
+    }
+
+    .milestone p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .media-split {
+      display: grid;
+      grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+      gap: 30px;
+      align-items: center;
+    }
+
+    .feature-copy {
+      max-width: 470px;
+    }
+
+    .feature-copy h3 {
+      margin-bottom: 14px;
+      color: var(--blue);
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .feature-copy p {
+      color: var(--muted);
+    }
+
+    .tag-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 22px;
+    }
+
+    .tag {
+      padding: 7px 10px;
+      border: 1px solid #cddde2;
+      border-radius: 6px;
+      color: #31515d;
+      background: var(--white);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .photo-card {
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .photo-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .photo-card figcaption {
+      padding: 10px 12px 12px;
+      color: #3c535f;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .band {
+      background: var(--white);
+      border-block: 1px solid var(--line);
+    }
+
+    .equipment {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, .8fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .equipment-image {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .equipment-image img {
+      width: 100%;
+      min-width: 560px;
+    }
+
+    .capability-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .capability {
+      padding: 18px 20px;
+      border-left: 4px solid var(--teal);
+      border-radius: 8px;
+      background: #eef6f6;
+    }
+
+    .capability h3 {
+      margin-bottom: 5px;
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .capability p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+      counter-reset: step;
+    }
+
+    .process-step {
+      min-height: 178px;
+      padding: 18px 16px;
+      border: 1px solid #cfe2e5;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #ffffff 0%, #eef7f6 100%);
+      box-shadow: 0 10px 26px rgba(14, 57, 77, .07);
+      counter-increment: step;
+    }
+
+    .process-step::before {
+      content: counter(step, decimal-leading-zero);
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 14px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .process-step h3 {
+      margin-bottom: 7px;
+      color: var(--blue);
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .process-step p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .products-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .7fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .products-layout img {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .specs {
+      display: grid;
+      gap: 14px;
+    }
+
+    .spec {
+      padding: 20px;
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .spec h3 {
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-size: 19px;
+    }
+
+    .spec ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .certs {
+      display: grid;
+      grid-template-columns: 1.1fr .7fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .cert-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .cert-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+      object-fit: contain;
+      background: #fff;
+    }
+
+    .contact {
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(4, 40, 62, .96), rgba(7, 82, 104, .94)),
+        url("assets/images/production-06.jpg") center / cover no-repeat;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(320px, .6fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      color: var(--white);
+    }
+
+    .contact p {
+      color: #d2e7eb;
+    }
+
+    .contact-box {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .contact-box a,
+    .contact-box span {
+      display: block;
+      margin-top: 8px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 800;
+      word-break: break-word;
+    }
+
+    .footer {
+      padding: 22px 0;
+      color: #6c7b84;
+      background: #ecf2f4;
+      font-size: 13px;
+    }
+
+    .footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1020px) {
+      .nav {
+        height: auto;
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+
+      .hero {
+        padding-top: 154px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .media-split,
+      .equipment,
+      .products-layout,
+      .certs,
+      .contact-grid,
+      .section-head {
+        grid-template-columns: 1fr;
+      }
+
+      .process {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      .wrap,
+      .nav {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .brand strong {
+        white-space: normal;
+      }
+
+      .hero {
+        min-height: 82svh;
+        padding-bottom: 42px;
+      }
+
+      h1 {
+        font-size: clamp(31px, 10vw, 38px);
+        line-height: 1.12;
+        max-width: 8.8em;
+        word-break: break-all;
+      }
+
+      .hero-copy {
+        font-size: 16px;
+      }
+
+      .hero-panel {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      .hero-panel h2 {
+        font-size: 21px;
+      }
+
+      .metrics,
+      .image-grid,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .footer .wrap {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" aria-label="页面导航">
+    <nav class="nav">
+      <a class="brand" href="#top">
+        <strong>苏州德旭玛精密机械有限公司</strong>
+        <span>DXM Precision Machinery</span>
+      </a>
+      <div class="nav-links" aria-label="主导航">
+        <a href="#about">公司概况</a>
+        <a href="#capability">生产产能</a>
+        <a href="#process">公司流程</a>
+        <a href="#products">产品展示</a>
+        <a href="#certificates">证书资质</a>
+        <a href="#contact">联系方式</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Company Introduction</p>
+          <h1>苏州德旭玛精密机械有限公司</h1>
+          <p class="hero-copy">专注精密机械加工、CNC 数控加工与产品组装服务，从工艺确认、原材采购、生产加工到出货检测，提供稳定可靠的一站式制造支持。</p>
+          <div class="actions">
+            <a class="button primary" href="#contact">联系业务</a>
+            <a class="button" href="#products">查看产品</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="公司关键数据">
+          <h2>Precision machining</h2>
+          <div class="metrics">
+            <div class="metric">
+              <strong>2018</strong>
+              <span>公司成立</span>
+            </div>
+            <div class="metric">
+              <strong>40</strong>
+              <span>员工，含 8 位工程师</span>
+            </div>
+            <div class="metric">
+              <strong>2000m²</strong>
+              <span>2025 年扩建规模</span>
+            </div>
+            <div class="metric">
+              <strong>¥2100万</strong>
+              <span>年营收</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Company Introduction</p>
+            <h2>从精密加工到装配销售的持续扩展</h2>
+          </div>
+          <p>公司位于江苏省苏州市高新区通安科技产业园，业务覆盖 CNC processing 与 products assembly，服务精密机械零部件加工和组装出货需求。</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="info-list reveal">
+            <div class="info-item">
+              <b>地址 Address</b>
+              <span>江苏省苏州市高新区通安科技产业园 5 号楼</span>
+            </div>
+            <div class="info-item">
+              <b>主营业务 Main Business</b>
+              <span>提供数控加工服务 CNC processing、产品组装服务 Products assembly</span>
+            </div>
+            <div class="info-item">
+              <b>企业资质 Qualifications</b>
+              <span>营业执照、高新技术企业、江苏省民营科技企业</span>
+            </div>
+          </div>
+
+          <div class="timeline reveal" aria-label="发展历程">
+            <article class="milestone">
+              <time>2018</time>
+              <h3>公司成立 Company Establish</h3>
+              <p>800m² 场地起步，开展精密机械加工业务。</p>
+            </article>
+            <article class="milestone">
+              <time>2020</time>
+              <h3>公司扩建 Company Expand</h3>
+              <p>扩建至 1200m²，提升加工与交付能力。</p>
+            </article>
+            <article class="milestone">
+              <time>2024</time>
+              <h3>增加装配销售 Add Assembly &amp; Sale</h3>
+              <p>业务延伸至产品组装与销售支持。</p>
+            </article>
+            <article class="milestone">
+              <time>2025</time>
+              <h3>公司扩建 Company Expand</h3>
+              <p>扩建至 2000m²，进一步承接批量生产需求。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capability" class="band">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Production Capability</p>
+            <h2>设备、产线与出货检测共同支撑交付</h2>
+          </div>
+          <p>生产现场覆盖 CNC 加工设备、刀具管理、产品检测与批量出货检验，适配金属与非金属零部件加工。</p>
+        </div>
+
+        <div class="equipment reveal">
+          <div class="equipment-image" aria-label="主要设备清单">
+            <img src="assets/images/equipment-list.jpg" alt="主要设备清单 Main Equipment List">
+          </div>
+          <div class="capability-list">
+            <article class="capability">
+              <h3>CNC 数控加工</h3>
+              <p>面向铜、铁、铝、不锈钢等金属材料及 POM、胶木、亚克力、Peek、Unilate 等非金属材料。</p>
+            </article>
+            <article class="capability">
+              <h3>产线实拍</h3>
+              <p>设备现场、刀具管理和加工工位保持可视化管理，便于生产组织和品质追踪。</p>
+            </article>
+            <article class="capability">
+              <h3>OQC 出货检测</h3>
+              <p>出货前执行尺寸与外观检查，覆盖组装件、机加工件与批量零件。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="image-grid" style="margin-top: 28px;">
+          <figure class="photo-card reveal">
+            <img src="assets/images/production-02.jpg" alt="CNC 加工设备现场">
+            <figcaption>CNC 加工设备</figcaption>
+          </figure>
+          <figure class="photo-card reveal">
+            <img src="assets/images/production-03.jpg" alt="刀具与工装管理">
+            <figcaption>刀具与工装管理</figcaption>
+          </figure>
+          <figure class="photo-card reveal">
+            <img src="assets/images/production-05.jpg" alt="零件加工现场">
+            <figcaption>零件加工现场</figcaption>
+          </figure>
+          <figure class="photo-card reveal">
+            <img src="assets/images/oqc-01.jpg" alt="检测设备与检测室">
+            <figcaption>检测设备</figcaption>
+          </figure>
+          <figure class="photo-card reveal">
+            <img src="assets/images/oqc-02.jpg" alt="产品外观检查">
+            <figcaption>外观检查</figcaption>
+          </figure>
+          <figure class="photo-card reveal">
+            <img src="assets/images/oqc-03.jpg" alt="批量零件出货检测">
+            <figcaption>批量零件检测</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Company Process</p>
+            <h2>从接单到包装出货的完整流程</h2>
+          </div>
+          <p>销售、研发、采购、生产、组装与出货检测协同推进，减少信息断点，确保加工与交付要求被明确执行。</p>
+        </div>
+
+        <div class="process">
+          <article class="process-step reveal">
+            <h3>接单</h3>
+            <p>Receive orders</p>
+          </article>
+          <article class="process-step reveal">
+            <h3>研发确认</h3>
+            <p>确认产品设计和制造工艺。</p>
+          </article>
+          <article class="process-step reveal">
+            <h3>采购分析</h3>
+            <p>原材采购和成本分析。</p>
+          </article>
+          <article class="process-step reveal">
+            <h3>正式生产</h3>
+            <p>Production</p>
+          </article>
+          <article class="process-step reveal">
+            <h3>组装/OQC</h3>
+            <p>需要时组装，并检查尺寸与外观。</p>
+          </article>
+          <article class="process-step reveal">
+            <h3>包装出货</h3>
+            <p>Package &amp; Delivery</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="band">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Products</p>
+            <h2>金属、非金属与多工艺零件展示</h2>
+          </div>
+          <p>加工类别覆盖 CNC、数控车床、钣金加工及多种表面处理与成型工艺。</p>
+        </div>
+
+        <div class="products-layout">
+          <img class="reveal" src="assets/images/products.jpg" alt="产品展示 Products">
+          <div class="specs reveal">
+            <article class="spec">
+              <h3>材料 Materials</h3>
+              <ul>
+                <li>金属：铜、铁、铝、不锈钢</li>
+                <li>非金属：POM、胶木、亚克力、Peek、Unilate</li>
+              </ul>
+            </article>
+            <article class="spec">
+              <h3>加工 Processing</h3>
+              <ul>
+                <li>CNC、数控车床</li>
+                <li>钣金加工：激光切割、弯曲、焊接、喷涂</li>
+              </ul>
+            </article>
+            <article class="spec">
+              <h3>工艺 Craft</h3>
+              <ul>
+                <li>硬氧化、普通氧化、电镀</li>
+                <li>注塑成型</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Certificates</p>
+            <h2>专利申请与质量管理体系认证</h2>
+          </div>
+          <p>公司已申请 16 个专利，授权 11 个专利，并具备 ISO9001 质量管理体系认证。</p>
+        </div>
+        <div class="certs">
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificates-patents.jpg" alt="专利证书 Patents">
+          </figure>
+          <figure class="cert-card reveal">
+            <img src="assets/images/certificate-quality.jpg" alt="ISO9001 质量管理体系认证">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>让图纸、工艺与交付节奏尽快对齐</h2>
+          <p>可提供 CNC 加工、产品组装、出货检测等制造支持。欢迎联系沟通图纸、材料、数量、表面处理与交期要求。</p>
+          <div class="tag-grid">
+            <span class="tag">CNC Processing</span>
+            <span class="tag">Products Assembly</span>
+            <span class="tag">OQC</span>
+            <span class="tag">Precision Machining</span>
+          </div>
+        </div>
+        <address class="contact-box reveal">
+          <p>联系人</p>
+          <span>秦总</span>
+          <p style="margin-top: 22px;">电话</p>
+          <a href="tel:15051505527">15051505527</a>
+          <p style="margin-top: 22px;">邮箱</p>
+          <a href="mailto:qdc15886@163.com">qdc15886@163.com</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>苏州德旭玛精密机械有限公司</span>
+      <span>Company Introduction Web Page</span>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+  </script>
+</body>
+</html>
